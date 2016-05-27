@@ -58,7 +58,7 @@ function detener() {
 }
 
 function obtenerOrientacion(orientacion){
-	$("#grados").text("Orientación: "+ orientacion.magneticHeading + "°");
+	$("#grados").text("OrientaciÃ³n: "+ orientacion.magneticHeading + "Â°");
 	$("#tiempo").text("Tiempo: "+ orientacion.timestamp);
 	$("#info").text();
 	}
@@ -70,7 +70,7 @@ function errorBrujula(error){
             //Funciones de cada aguja
             function seg(){
                 x=$("#segundero");
-                grados = orientacion.magneticHeading;
+                grados = orientacion.magneticHeading*1;
                 x.css("-webkit-transform","rotate("+grados+"deg)");
             }
             
